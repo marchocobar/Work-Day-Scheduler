@@ -27,6 +27,6 @@ THEN the saved events persist
 HTML, CSS, Javascript, JQuery
 
 ## Usage
-![Screenshot]()
+![Screenshot of deployed app](/assets/Image/Screen%20Shot%202022-10-07%20at%204.54.40%20PM.png)
 
-![View Website Here] ()
+![View Website Here] (https://marchocobar.github.io/Work-Day-Scheduler/)
