@@ -38,15 +38,20 @@ function showEvents() {
     }
     for (var i = 0; i < hourBlocks.length; i++) {
         if (eventValues[i]) {
-            descriptionInput[i].value(eventValues[i])
+            descriptionInput[i].textcontent=eventValues[i];
         }
     }
 }
 
 function colorBlocks() {
     for (var i = 0; i < hourBlocks.length; i++) {
-        if (currentTime<hourBlocks[i]) {
-            descriptionInput[i].addClass("future");
+        if (currentTime < hourBlocks[i]) {
+            // descriptionInput[i].addClass("future");
+            $(descriptionInput[i]).addClass("future");
+        } else if (currentTime>hourBlocks[i]) {
+            $(descriptionInput[i]).addClass("past");
+        } else {
+            $(descriptionInput[i]).addClass("present");
         }
     }
 }
