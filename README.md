@@ -1,7 +1,7 @@
 # Work-Day-Scheduler
 
 ## Description
-Module 5 Challenge
+For this challenge I created a scheduling app for a standard work day. Events inputed are saved to local storage. When the time for the event passes, it is greyed out. Present events are colored red and future is shown in green. 
 
 ## User Story
 AS AN employee with a busy schedule
@@ -22,3 +22,11 @@ WHEN I click the save button for that time block
 THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
+
+## Installation
+HTML, CSS, Javascript, JQuery
+
+## Usage
+![Screenshot]()
+
+![View Website Here] ()
