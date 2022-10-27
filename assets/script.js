@@ -25,22 +25,27 @@ function inputUserSchedule() {
     var pullEvents = [];
     for (var i = 0; i < hourBlocks.length; i++) {
         pullEvents.push(descriptionInput[i].value)
+        eventValues = pullEvents;
+        localStorage.setItem('event', JSON.stringify(eventValues));
     }
-    eventValues = pullEvents;
-    localStorage.setItem('event', JSON.stringify(eventValues));
+    
     alert("Saved!");
 
 }
 
 function showEvents() {
-    if (JSON.parse(localStorage.getItem('event'))) {
+   
+    for (var i = 0; i < hourBlocks.length; i++) {
+         if (JSON.parse(localStorage.getItem('event'))) {
         eventValues =  (JSON.parse(localStorage.getItem('event')));
     }
-    for (var i = 0; i < hourBlocks.length; i++) {
+        
         if (eventValues[i]) {
-            descriptionInput[i].textcontent=eventValues[i];
+            descriptionInput[i].append(eventValues[i]);
         }
-    }
+       
+    } 
+    
 }
 
 function colorBlocks() {
